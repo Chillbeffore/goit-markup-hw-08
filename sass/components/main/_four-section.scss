@@ -1,0 +1,110 @@
+.fourth-section {
+  background-color: var(--grey-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &__primary-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__secondary-text {
+    margin: 0px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__ternary-text {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    text-align: center;
+  }
+  &__container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  &__card-workers {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  & .photo-card + .photo-card {
+    margin-left: 30px;
+  }
+  & div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.photo-card {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.photo-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.div-card {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.masters-soc-list {
+  display: flex;
+  padding: 0;
+
+  &__masters-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+  }
+  &__masters-soc-item:first-child {
+    margin-left: 0;
+  }
+  &__masters-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__masters-soc-link:hover,
+  &__masters-soc-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
+  &__masters-soc-link:hover .masters-soc-icon,
+  &__masters-soc-link:focus .masters-soc-icon {
+    fill: var(--white-color);
+  }
+}
+
+.masters-soc-icon {
+  fill: var(--icon-color);
+}

@@ -1,0 +1,106 @@
+.fourth-section {
+  background-color: var(--grey-color);
+  padding-bottom: 94px;
+}
+.fourth-section .primary-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+  text-align: center;
+}
+.fourth-section .secondary-text {
+  margin: 0px;
+}
+.fourth-section .ternary-text {
+  margin-bottom: 10px;
+}
+
+.fourth-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.fourth-section .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.fourth-section .card-workers {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.fourth-section .photo-card {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.fourth-section .photo-card + .photo-card {
+  margin-left: 30px;
+}
+.fourth-section div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.fourth-section .primary-text {
+  margin-bottom: 50px;
+}
+.fourth-section .ternary-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+.fourth-section .secondary-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.div-card {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.masters-soc-list {
+  display: flex;
+  padding: 0;
+}
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.masters-soc-item:first-child {
+  margin-left: 0;
+}
+.masters-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+  fill: var(--white-color);
+}
+
+.masters-soc-icon {
+  fill: var(--icon-color);
+}

@@ -1,0 +1,25 @@
+@import "./base/reset";
+@import "./utils/vars";
+
+@import "./components/header/header";
+@import "./components/container/container";
+@import "./components/header/logo";
+@import "./components/header/nav-links";
+@import "./components/header/contacts";
+
+@import "./components/main/first-section";
+@import "./components/main/second-section";
+@import "./components/main/third-section";
+@import "./components/main/four-section";
+@import "./components/main/five-section";
+
+@import "./components/footer/footer";
+@import "./components/footer/footer-links";
+@import "./components/footer/footer-social";
+@import "./components/footer/subscribe";
+
+@import "./components/portfolio/first-section";
+@import "./components/portfolio/second-section";
+
+@import "./components/modal/backdrop";
+@import "./components/modal/modal";

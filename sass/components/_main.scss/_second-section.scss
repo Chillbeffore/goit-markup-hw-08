@@ -1,0 +1,64 @@
+.second-section .section-list {
+  display: flex;
+}
+.second-section {
+  background-color: var(--white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.cards-item {
+  width: 270px;
+}
+.cards-item::before {
+  display: block;
+  content: "";
+
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--grey-color);
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
+  background-size: 70px 70px;
+}
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+  background-size: 70px 70px;
+}
+.icon-diagram::before {
+  background-image: url(../img/diagram.svg);
+  background-size: 70px 70px;
+}
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
+  background-size: 70px 70px;
+}
+.cards-list {
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+}
+.cards-item + .cards-item {
+  margin-left: 30px;
+}
+
+.second-section .primary-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+.second-section .secondary-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 0px;
+}

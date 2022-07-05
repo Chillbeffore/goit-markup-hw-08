@@ -1,0 +1,68 @@
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .footer-link {
+  display: inline-block;
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+.contact-links {
+  font-style: normal;
+  padding-left: 0px;
+  margin: 0px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .logo-accent {
+  color: var(--white-color);
+}
+.link-mail {
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-tel {
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.links .map-link {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.links .map-link:hover,
+.links .map-link:focus {
+  color: var(--accent-color);
+}
+.links .link-mail:hover,
+.links .link-mail:focus {
+  color: var(--accent-color);
+}
+.links .link-tel:hover,
+.links .link-tel:focus {
+  color: var(--accent-color);
+}
+.contact-links .links {
+  margin-bottom: 9px;
+}
+.contact-links .links:last-child {
+  margin-bottom: 0px;
+}
+.fotter-contacts {
+  width: 215px;
+}
