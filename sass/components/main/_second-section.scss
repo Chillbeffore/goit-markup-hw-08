@@ -6,10 +6,15 @@
 .section-list {
   display: flex;
 }
-.cards-list__cards-item {
+
+.cards-item + .cards-item {
+  margin-left: 30px;
+}
+
+.cards-item {
   width: 270px;
 }
-.cards-list__cards-item::before {
+.cards-item::before {
   display: block;
   content: "";
 
@@ -20,20 +25,20 @@
   background-color: var(--grey-color);
   margin-bottom: 30px;
 }
-.cards-item .icon-antenna::before {
-  background-image: url(../img/antenna.svg);
+.icon-antenna::before {
+  background-image: url(../../../img/antenna.svg);
   background-size: 70px 70px;
 }
-.cards-item .icon-clock::before {
-  background-image: url(../img/clock.svg);
+.icon-clock::before {
+  background-image: url(../../../img/clock.svg);
   background-size: 70px 70px;
 }
-.cards-item .icon-diagram::before {
-  background-image: url(../img/diagram.svg);
+.icon-diagram::before {
+  background-image: url(../../../img/diagram.svg);
   background-size: 70px 70px;
 }
-.cards-item .icon-astronaut::before {
-  background-image: url(../img/astronaut.svg);
+.icon-astronaut::before {
+  background-image: url(../../../img/astronaut.svg);
   background-size: 70px 70px;
 }
 .cards-list {
