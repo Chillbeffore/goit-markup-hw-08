@@ -43,6 +43,12 @@
   padding-left: 29px;
   margin-left: 12px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: #1e88df;
+  }
 }
 
 .footer-sub-icon {

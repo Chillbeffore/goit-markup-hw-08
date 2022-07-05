@@ -2,18 +2,70 @@
   background-color: var(--white-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 320px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .section-list {
   display: flex;
 }
 
-.cards-item + .cards-item {
-  margin-left: 30px;
+.cards-item {
+  // margin-left: 30px;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
-.cards-item {
-  width: 270px;
+.cards-list {
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+  &__primary-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+    @media screen and (min-width: 320px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
+  }
+  &__secondary-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 0px;
+  }
+  &__cards-item + &__cards-item {
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 320px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
+
 .cards-item::before {
   display: block;
   content: "";
@@ -40,29 +92,4 @@
 .icon-astronaut::before {
   background-image: url(../../../img/astronaut.svg);
   background-size: 70px 70px;
-}
-.cards-list {
-  display: flex;
-  padding-left: 0px;
-  margin: 0px;
-  &__primary-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
-    margin-bottom: 10px;
-  }
-  &__secondary-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    margin-bottom: 0px;
-  }
-  &__cards-item + &__cards-item {
-    margin-left: 30px;
-  }
 }
