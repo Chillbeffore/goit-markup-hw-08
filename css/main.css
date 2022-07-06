@@ -445,8 +445,18 @@ section {
 
 .fourth-section {
   background-color: var(--grey-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
+}
+@media screen and (min-width: 320px) {
+  .fourth-section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fourth-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .fourth-section__primary-text {
   font-weight: 700;
@@ -454,8 +464,17 @@ section {
   line-height: 42px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 50px;
   text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .fourth-section__primary-text {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fourth-section__primary-text {
+    margin-bottom: 50px;
+  }
 }
 .fourth-section__secondary-text {
   margin: 0px;
@@ -480,21 +499,35 @@ section {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.fourth-section__card-workers {
+@media screen and (min-width: 1200px) {
+  .fourth-section__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.fourth-section__container__card-workers {
   display: flex;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.fourth-section .photo-card + .photo-card {
-  margin-left: 30px;
+@media screen and (min-width: 320px) {
+  .fourth-section__container__card-workers {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
-.fourth-section div {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .fourth-section__container .photo-card + .photo-card {
+    justify-content: center;
+  }
 }
-
-.photo-card {
+@media screen and (min-width: 320px) {
+  .fourth-section__container div {
+    padding: 0;
+  }
+}
+.fourth-section .photo-card {
   display: block;
   max-width: 100%;
   height: auto;
@@ -503,31 +536,54 @@ section {
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.photo-card img {
+@media screen and (min-width: 320px) {
+  .fourth-section .photo-card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fourth-section .photo-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fourth-section .photo-card {
+    width: 270px;
+  }
+}
+.fourth-section .photo-card img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-.div-card {
+@media screen and (min-width: 320px) {
+  .fourth-section .photo-card img {
+    width: 100%;
+  }
+}
+.fourth-section .div-card {
   padding-left: 32px;
   padding-right: 32px;
 }
-
-.masters-soc-list {
+.fourth-section .masters-soc-list {
   display: flex;
   padding: 0;
 }
-.masters-soc-list__masters-soc-item {
+@media screen and (min-width: 320px) {
+  .fourth-section .masters-soc-list {
+    justify-content: center;
+  }
+}
+.fourth-section .masters-soc-list__masters-soc-item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
 }
-.masters-soc-list__masters-soc-item:first-child {
+.fourth-section .masters-soc-list__masters-soc-item:first-child {
   margin-left: 0;
 }
-.masters-soc-list__masters-soc-link {
+.fourth-section .masters-soc-list__masters-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,15 +594,14 @@ section {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.masters-soc-list__masters-soc-link:hover, .masters-soc-list__masters-soc-link:focus {
+.fourth-section .masters-soc-list__masters-soc-link:hover, .fourth-section .masters-soc-list__masters-soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
-.masters-soc-list__masters-soc-link:hover .masters-soc-icon, .masters-soc-list__masters-soc-link:focus .masters-soc-icon {
+.fourth-section .masters-soc-list__masters-soc-link:hover .masters-soc-icon, .fourth-section .masters-soc-list__masters-soc-link:focus .masters-soc-icon {
   fill: var(--white-color);
 }
-
-.masters-soc-icon {
+.fourth-section .masters-soc-icon {
   fill: var(--icon-color);
 }
 
@@ -569,10 +624,19 @@ section {
   padding: 0;
   margin: 0;
 }
+@media screen and (min-width: 320px) {
+  .company-cards-list {
+    flex-wrap: wrap;
+  }
+}
 .company-cards-list__company-card-item {
   width: 170px;
   height: 92px;
-  margin-left: 30px;
+}
+@media screen and (min-width: 320px) {
+  .company-cards-list__company-card-item {
+    margin-left: 0;
+  }
 }
 .company-cards-list__company-card-item:first-child {
   margin-left: 0;
