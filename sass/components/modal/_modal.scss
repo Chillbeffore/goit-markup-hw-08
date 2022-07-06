@@ -1,6 +1,6 @@
 .modal {
   background-color: var(--white-color);
-  width: 528px;
+  max-width: 528px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -11,6 +11,13 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   padding: 40px 40px;
+
+  @media screen and (min-width: 320px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .modal-primary-text {
   display: block;
@@ -69,6 +76,13 @@
   margin-right: auto;
   padding: 0px;
   margin-top: 0;
+
+  @media screen and (min-width: 320px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 449px;
+  }
 }
 
 .form-label {
@@ -103,7 +117,14 @@
 .checkbox-label {
   display: flex;
   align-items: center;
-  padding: 0px 10px;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: 320px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0px 10px;
+  }
 }
 .form-checkbox {
   display: flex;
@@ -122,6 +143,9 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 320px) {
+  }
 }
 
 .input-icon {
@@ -181,6 +205,14 @@
   margin-bottom: 0px;
   margin-left: 7px;
   text-align: center;
+
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+    text-align: start;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .input-icon {
@@ -222,5 +254,4 @@ textarea:focus {
   color: var(--white-color);
   cursor: pointer;
   border: 0;
-  margin-top: 30px;
 }

@@ -1,5 +1,15 @@
 .footer-soc {
-  margin-left: auto;
+  @media screen and (min-width: 320px) {
+    padding: 60px 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .fotter-primary-text {
   display: block;
@@ -10,6 +20,13 @@
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .fotter-masters-soc-list {
   padding: 0;
