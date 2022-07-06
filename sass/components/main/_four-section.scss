@@ -67,6 +67,7 @@
         gap: 30px;
       }
       @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
       }
     }
     & .photo-card + .photo-card {
@@ -159,8 +160,7 @@
       fill: var(--white-color);
     }
   }
-
-  .masters-soc-icon {
-    fill: var(--icon-color);
-  }
+}
+.masters-soc-icon {
+  fill: var(--icon-color);
 }

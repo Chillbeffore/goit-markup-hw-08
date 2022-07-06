@@ -517,6 +517,11 @@ section {
     gap: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .fourth-section__container__card-workers {
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .fourth-section__container .photo-card + .photo-card {
     justify-content: center;
@@ -601,7 +606,8 @@ section {
 .fourth-section .masters-soc-list__masters-soc-link:hover .masters-soc-icon, .fourth-section .masters-soc-list__masters-soc-link:focus .masters-soc-icon {
   fill: var(--white-color);
 }
-.fourth-section .masters-soc-icon {
+
+.masters-soc-icon {
   fill: var(--icon-color);
 }
 
