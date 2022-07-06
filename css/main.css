@@ -625,6 +625,8 @@ section {
 @media screen and (min-width: 320px) {
   .company-cards-list {
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 }
 .company-cards-list__company-card-item {
@@ -635,9 +637,6 @@ section {
   .company-cards-list__company-card-item {
     margin-left: 0;
   }
-}
-.company-cards-list__company-card-item:first-child {
-  margin-left: 0;
 }
 .company-cards-list__company-cards-link {
   display: flex;

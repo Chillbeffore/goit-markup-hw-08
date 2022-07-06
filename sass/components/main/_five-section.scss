@@ -20,6 +20,8 @@
 
   @media screen and (min-width: 320px) {
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 
   &__company-card-item {
@@ -31,9 +33,9 @@
     }
   }
 
-  &__company-card-item:first-child {
-    margin-left: 0;
-  }
+  // &__company-card-item:first-child {
+  //   margin-left: 0;
+  // }
 
   &__company-cards-link {
     display: flex;
