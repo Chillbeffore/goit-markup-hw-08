@@ -567,6 +567,11 @@ section {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .fourth-section .photo-card img {
+    max-width: 100%;
+  }
+}
 .fourth-section .div-card {
   padding-left: 32px;
   padding-right: 32px;
