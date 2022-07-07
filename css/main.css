@@ -741,6 +741,7 @@ section {
   .footer-subscribe-join {
     flex-wrap: nowrap;
     align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
