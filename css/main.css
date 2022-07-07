@@ -517,7 +517,7 @@ section {
     gap: 30px;
   }
 }
-.fourth-section div {
+.fourth-section .div-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
