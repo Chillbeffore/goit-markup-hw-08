@@ -1307,7 +1307,6 @@ section {
   max-width: 528px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1316,12 +1315,14 @@ section {
 }
 @media screen and (min-width: 320px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
+    position: relative;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
+    position: absolute;
   }
 }
 
@@ -1377,7 +1378,7 @@ section {
 }
 
 .form {
-  width: 449px;
+  max-width: 449px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
@@ -1385,12 +1386,12 @@ section {
 }
 @media screen and (min-width: 320px) {
   .form {
-    width: 370px;
+    max-width: 370px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form {
-    width: 449px;
+    max-width: 449px;
   }
 }
 
