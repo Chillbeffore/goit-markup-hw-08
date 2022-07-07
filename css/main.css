@@ -638,6 +638,16 @@ section {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .company-cards-list__company-card-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-cards-list__company-card-item {
+    width: 170px;
+  }
+}
 .company-cards-list__company-cards-link {
   display: flex;
   align-items: center;
@@ -829,6 +839,7 @@ section {
 @media screen and (min-width: 320px) {
   .fotter-primary-text {
     text-align: center;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -904,6 +915,7 @@ section {
   .fotter-form {
     flex-wrap: wrap;
     justify-content: center;
+    width: 420px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -915,6 +927,7 @@ section {
 @media screen and (min-width: 1200px) {
   .fotter-form {
     flex-wrap: nowrap;
+    width: auto;
   }
 }
 
@@ -926,7 +939,7 @@ section {
   .input-footer {
     display: flex;
     justify-content: center;
-    width: 738px;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -1011,6 +1024,12 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 320px) {
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .header.portfolio {
   border-bottom: 1px solid #ececec;
@@ -1021,11 +1040,27 @@ section {
   margin: 0px;
   margin-top: 0px;
   margin-bottom: 50px;
-}
-
-.buttons {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .buttons .section-buttons {
@@ -1033,8 +1068,13 @@ section {
   background-color: var(--grey-color);
 }
 
-.buttons .section-buttons + .section-buttons {
+.buttons .section-buttons {
   margin-left: 8px;
+}
+@media screen and (min-width: 320px) {
+  .buttons .section-buttons {
+    margin-top: 15px;
+  }
 }
 
 .button-one {
@@ -1188,6 +1228,7 @@ section {
 .work-cards {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .card-overlay {
@@ -1197,6 +1238,12 @@ section {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+}
+@media screen and (min-width: 320px) {
+  .card-overlay {
+    width: auto;
+    height: auto;
+  }
 }
 
 .action {
@@ -1232,17 +1279,38 @@ section {
 .cards {
   margin-top: 0px;
   padding-left: 0px;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .cards .photo-cards {
-  margin-right: 30px;
   max-width: 370px;
-  margin-bottom: 30px;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards .photo-cards {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards .photo-cards {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .link-focus {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .link-focus {
+    height: 100%;
+  }
 }
 
 .photo-cards:hover,
