@@ -356,22 +356,22 @@ section {
 }
 
 .icon-antenna::before {
-  background-image: url(../../../img/antenna.svg);
+  background-image: url(../img/antenna.svg);
   background-size: 70px 70px;
 }
 
 .icon-clock::before {
-  background-image: url(../../../img/clock.svg);
+  background-image: url(../img/clock.svg);
   background-size: 70px 70px;
 }
 
 .icon-diagram::before {
-  background-image: url(../../../img/diagram.svg);
+  background-image: url(../img/diagram.svg);
   background-size: 70px 70px;
 }
 
 .icon-astronaut::before {
-  background-image: url(../../../img/astronaut.svg);
+  background-image: url(../img/astronaut.svg);
   background-size: 70px 70px;
 }
 
