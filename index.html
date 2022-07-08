@@ -198,8 +198,21 @@
       <div class="fourth-section__container container">
         <h2 class="fourth-section__primary-text primary-text">Наша команда</h2>
         <ul class="fourth-section__card-workers card-workers">
+
           <li class="photo-card">
-            <img src="./img/img-3.jpg" alt="работник Игорь " width="270" />
+            <picture>
+
+              <source srcset="./img/img-3.jpg 1x,
+            ./img/img-3.jpg 2x" media="(min-width: 1200)" />
+
+              <source srcset="./img-1-tab-1x.jpg 1x,
+            ./img-1-tab-2x.jpg 2x" media="(min-width: 768)" />
+
+              <source srcset="./img-1-mob-1x.jpg 1x,
+                        ./img-1-mob-2x.jpg 2x" media="(min-width: 480)" />
+              <img src="./img/img-3.jpg" alt="работник Игорь " width="270" />
+
+            </picture>
             <div class="div-card">
               <h3 class="fourth-section__ternary-text ternary-text">Игорь Демьяненко</h3>
               <p class="fourth-section__secondary-text secondary-text" lang="en">Product Designer</p>
@@ -236,7 +249,20 @@
             </div>
           </li class="photo-card">
           <li class="photo-card">
-            <img src="./img/img-2.jpg" alt="работник Ольга " width="270" />
+            <picture>
+
+              <source srcset="./img/img-2.jpg 1x,
+                        ./img/img-2.jpg 2x" media="(min-width: 1200)" />
+
+              <source srcset="./img-2-tab-1x.jpg 1x,
+                        ./img-2-tab-2x.jpg 2x" media="(min-width: 768)" />
+
+              <source srcset="./img-2-mob-1x.jpg 1x,
+                                    ./img-2-mob-2x.jpg 2x" media="(min-width: 480)" />
+
+
+              <img src="./img/img-2.jpg" alt="работник Ольга " width="270" />
+            </picture>
             <div class="div-card">
               <h3 class="fourth-section__ternary-text ternary-text">Ольга Репина</h3>
               <p class="fourth-section__secondary-text secondary-text" lang="en">Frontend Developer</p>
@@ -273,7 +299,20 @@
             </div>
           </li>
           <li class="photo-card">
-            <img src="./img/img-1.jpg" alt="работник Николай " width="270" />
+            <picture>
+
+              <source srcset="./img/img-1.jpg 1x,
+                                    ./img/img-1.jpg 2x" media="(min-width: 1200)" />
+
+              <source srcset="./img-1-tab-1x.jpg 1x,
+                                    ./img-1-tab-2x.jpg 2x" media="(min-width: 768)" />
+
+              <source srcset="./img-1-mob-1x.jpg 1x,
+                                                ./img-1-mob-2x.jpg 2x" media="(min-width: 480)" />
+
+
+              <img src="./img/img-1.jpg" alt="работник Николай " width="270" />
+            </picture>
             <div class="div-card">
               <h3 class="fourth-section__ternary-text ternary-text">Николай Тарасов</h3>
               <p class="fourth-section__secondary-text secondary-text" lang="en">Marketing</p>
@@ -310,7 +349,22 @@
             </div>
           </li>
           <li class="photo-card">
-            <img src="./img/img.jpg" alt="работник Михаил " width="270" />
+
+            <picture>
+
+              <source srcset="./img/img-4.jpg 1x,
+                                                            ./img/img-4.jpg 2x" media="(min-width: 1200)" />
+
+              <source srcset="./img-4-tab-1x.jpg 1x,
+                                                            ./img-4-tab-2x.jpg 2x" media="(min-width: 768)" />
+
+              <source srcset="./img-4-mob-1x.jpg 1x,
+                                                                        ./img-4-mob-2x.jpg 2x"
+                media="(min-width: 480)" />
+
+
+              <img src="./img/img.jpg" alt="работник Михаил " width="270" />
+            </picture>
             <div class="div-card">
               <h3 class="fourth-section__ternary-text ternary-text">Михаил Ермаков</h3>
               <p class="fourth-section__secondary-text secondary-text" lang="en">UI Designer</p>
