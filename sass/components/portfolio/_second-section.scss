@@ -58,10 +58,12 @@
   margin-top: 0px;
   padding-left: 0px;
   gap: 30px;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
   }
 }
 .cards .photo-cards {
