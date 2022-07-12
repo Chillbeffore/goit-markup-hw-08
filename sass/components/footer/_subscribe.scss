@@ -18,7 +18,7 @@
   @media screen and (min-width: 320px) {
     flex-wrap: wrap;
     justify-content: center;
-    width: 420px;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
@@ -62,10 +62,12 @@
 
   @media screen and (min-width: 320px) {
     margin-bottom: 20px;
+    width: 320px;
   }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    width: 450px;
   }
 }
 .footer-sub-btn {
@@ -100,7 +102,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 12px;
+    margin-left: 28px;
   }
 }
 

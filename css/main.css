@@ -78,40 +78,33 @@ section {
     border: 0;
     z-index: 2;
   }
-
   .icon-menu:hover,
 .icon-menu:focus {
     fill: var(--accent-color);
   }
-
   .icon-cross:hover,
 .icon-cross:focus {
     fill: var(--accent-color);
   }
-
   .mob-btn .icon-cross {
     display: none;
   }
-
   .mob-btn.is-open .icon-cross {
     display: block;
   }
-
   .mob-btn.is-open .icon-menu {
     display: none;
   }
-
   .mob-menu {
     display: block;
     margin: 0;
     padding: 0;
   }
-
   .mob-header-nav.is-open {
     display: flex;
     transition: 250ms ease;
+    flex-direction: row;
   }
-
   .main-mob-nav {
     padding: 0;
     margin: 0;
@@ -458,6 +451,7 @@ section {
 @media screen and (min-width: 320px) {
   .hero {
     max-width: 480px;
+    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-photo-mob-1x.jpg");
   }
 }
@@ -480,6 +474,7 @@ section {
 @media screen and (min-width: 320px) and (min-width: 768px) and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-photo.jpg");
   }
 }
@@ -1216,7 +1211,7 @@ section {
   .fotter-form {
     flex-wrap: wrap;
     justify-content: center;
-    width: 420px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1264,11 +1259,13 @@ section {
 @media screen and (min-width: 320px) {
   .footer-input {
     margin-bottom: 20px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-input {
     margin-bottom: 0;
+    width: 450px;
   }
 }
 
@@ -1302,7 +1299,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .footer-sub-btn {
-    margin-left: 12px;
+    margin-left: 28px;
   }
 }
 

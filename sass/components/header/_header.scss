@@ -66,6 +66,7 @@
   .mob-header-nav.is-open {
     display: flex;
     transition: 250ms ease;
+    flex-direction: row;
   }
 
   .main-mob-nav {
