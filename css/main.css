@@ -353,7 +353,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin-left: 84px;
-    padding: 21px 0px;
+    padding: 7px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -371,10 +371,11 @@ section {
 }
 .conect__link-item {
   display: flex;
+  padding-bottom: 5px;
 }
 
 .conect__link-item:not(:last-child) {
-  margin-bottom: 10px;
+  padding-top: 5px;
 }
 @media screen and (min-width: 1200px) {
   .conect__link-item:not(:last-child) {
