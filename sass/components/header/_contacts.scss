@@ -33,6 +33,10 @@
 .conect__link-item {
   display: flex;
   padding-bottom: 5px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .conect__link-item:not(:last-child) {
