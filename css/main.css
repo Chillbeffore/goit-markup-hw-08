@@ -1041,6 +1041,11 @@ section {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer .footer-link {
+    justify-content: start;
+  }
+}
 
 .contact-links {
   font-style: normal;
@@ -1055,6 +1060,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-links {
+    justify-content: start;
   }
 }
 
@@ -1235,6 +1245,7 @@ section {
   .fotter-form {
     flex-wrap: nowrap;
     width: auto;
+    justify-self: start;
   }
 }
 
@@ -1253,6 +1264,7 @@ section {
 @media screen and (min-width: 1200px) {
   .input-footer {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -1310,7 +1322,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .footer-sub-btn {
-    margin-left: 28px;
+    margin-left: 12px;
   }
 }
 
@@ -1556,7 +1568,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: auto;
+  overflow-y: scroll;
   padding: 63px 24px;
   margin: 0;
   font-style: normal;
