@@ -403,6 +403,7 @@ body.menu-open {
 @media screen and (min-width: 1200px) {
   .conect__link-item:not(:last-child) {
     margin-bottom: 0;
+    padding: 0;
   }
 }
 
