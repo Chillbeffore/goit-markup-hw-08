@@ -11,7 +11,12 @@
   line-height: 31px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 480px) {
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
@@ -27,7 +32,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -83,4 +95,8 @@
 }
 .fotter-contacts {
   width: 215px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }

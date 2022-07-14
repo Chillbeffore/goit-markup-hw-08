@@ -1,3 +1,7 @@
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal {
   background-color: var(--white-color);
   max-width: 528px;
